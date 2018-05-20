@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import fetch from 'isomorphic-fetch';
-import { Layout, Card, List, Icon, Spin } from 'antd';
+import { Card, List, Spin } from 'antd';
 import './App.css';
 
 class App extends Component {
@@ -26,7 +26,7 @@ class App extends Component {
           bordered
           dataSource={this.state.dataSource}
           renderItem={(item, index) => (
-            <List.Item>
+            <List.Item onClick={()=>{alert('ccc')}}>
               {item}
             </List.Item>
           )}
